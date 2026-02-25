@@ -146,7 +146,7 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
               >
                 <div>
                   <label className="block text-xs font-semibold tracking-widest text-muted-foreground uppercase mb-2">
-                    Patient ID / Student Name
+                    Patient ID
                   </label>
                   <input
                     className="input-cyber w-full px-4 py-3 rounded-lg"
@@ -168,7 +168,7 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
                   }}
                 >
                   <Zap size={16} />
-                  INITIALIZE SESSION
+                  Start Operation
                 </motion.button>
               </motion.div>
             ) : (
@@ -221,9 +221,9 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
           )}
         </div>
 
-        <p className="text-center mt-4 text-xs text-muted-foreground tracking-widest">
-          HINT: Admin password is <span className="neon-cyan font-mono">admin123</span>
-        </p>
+        {/* <p className="text-center mt-4 text-xs text-muted-foreground tracking-widest">
+          HINT: Admin password is <span className="neon-cyan font-mono">X-Kernel-Head-Hema</span>
+        </p> */}
       </motion.div>
 
       {/* Scanning overlay */}

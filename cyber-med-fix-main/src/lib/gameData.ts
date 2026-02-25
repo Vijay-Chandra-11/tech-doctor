@@ -49,9 +49,17 @@ export const bodyPartsData: BodyPartData[] = [
   },
 ];
 
+// export interface StudentScore {
+//   name: string;
+//   timeTaken: number; // seconds
+//   organsRestored: number;
+//   totalScore: number;
+// }
+
 export interface StudentScore {
   name: string;
-  timeTaken: number; // seconds
+  level: number; // <-- ADD THIS
+  timeTaken: number;
   organsRestored: number;
   totalScore: number;
 }
