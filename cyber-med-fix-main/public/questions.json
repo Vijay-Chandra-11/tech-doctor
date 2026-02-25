@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "question": "Objective: Check if x is equal to 5 and print a message.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int x = 10;\n4      if (x = 5) {\n5          printf(\"x is 5\\n\");\n6      }\n7      return 0;\n8  }",
     "correctAnswer": "4",
     "difficulty": "easy",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "question": "Objective: Remove all even numbers from the list.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def filter_evens(numbers):\n2      for num in numbers:\n3          if num % 2 == 0:\n4              numbers.remove(num)\n5      return numbers\n6\n7  print(filter_evens([1, 2, 2, 3, 4]))",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "question": "Objective: Check if the text inside both strings is strictly identical.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Compare {\n2      public static void main(String[] args) {\n3          String s1 = new String(\"tech\");\n4          String s2 = new String(\"tech\");\n5          if (s1 == s2) {\n6              System.out.println(\"Match\");\n7          }\n8      }\n9  }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -136,7 +136,7 @@
   },
   {
     "id": 16,
-    "question": "Objective: Calculate the sum of all elements in the array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int data[5] = {10, 20, 30, 40, 50};\n4      int sum = 0;\n5      for (int i = 1; i <= 5; i++) {\n6          sum += data[i];\n7      }\n8      printf(\"Sum: %d\", sum);\n9      return 0;\n10 }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -154,7 +154,7 @@
   },
   {
     "id": 18,
-    "question": "Objective: Accurately divide 'a' by 'b' and store the precise decimal result.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class MathCalc {\n2      public static void main(String[] args) {\n3          int a = 5;\n4          int b = 2;\n5          double result = a / b;\n6          System.out.println(\"Result: \" + result);\n7      }\n8  }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -172,7 +172,7 @@
   },
   {
     "id": 20,
-    "question": "Objective: Create distinctly empty separate teams for each new employee if no pre-existing team is provided.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def add_employee(name, team=[]):\n2      team.append(name)\n3      return team\n4\n5  team1 = add_employee(\"Alice\")\n6  team2 = add_employee(\"Bob\")\n7  print(team2)",
     "correctAnswer": "1",
     "difficulty": "medium",
@@ -181,7 +181,7 @@
   },
   {
     "id": 21,
-    "question": "Objective: The first function in the list should multiply its input by 0, the second by 1, and the third by 2.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def create_multipliers():\n2      funcs = []\n3      for i in range(3):\n4          funcs.append(lambda x: x * i)\n5      return funcs\n6\n7  multipliers = create_multipliers()\n8  print(multipliers[0](10))",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -190,7 +190,7 @@
   },
   {
     "id": 22,
-    "question": "Objective: Check if the two Integer wrappers contain the exact same integer value.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class CacheTest {\n2      public static void main(String[] args) {\n3          Integer x = 1000;\n4          Integer y = 1000;\n5          if (x == y) {\n6              System.out.println(\"Equal references\");\n7          }\n8      }\n9  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -199,7 +199,7 @@
   },
   {
     "id": 23,
-    "question": "Objective: Dynamically calculate and print the number of elements in the passed array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  void print_size(int arr[]) {\n3      int size = sizeof(arr) / sizeof(arr[0]);\n4      printf(\"Size: %d\\n\", size);\n5  }\n6  int main() {\n7      int nums[] = {1, 2, 3, 4, 5};\n8      print_size(nums);\n9      return 0;\n10 }",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -208,7 +208,7 @@
   },
   {
     "id": 24,
-    "question": "Objective: Create multiple players, ensuring they each have independent inventories.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  class Player:\n2      inventory = []\n3      def __init__(self, name):\n4          self.name = name\n5      def pick_up(self, item):\n6          self.inventory.append(item)\n7\n8  p1 = Player(\"Hero\")\n9  p2 = Player(\"Villain\")\n10 p1.pick_up(\"Sword\")",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -217,7 +217,7 @@
   },
   {
     "id": 25,
-    "question": "Objective: Execute the worker task concurrently on a newly spawned separate thread.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Worker extends Thread {\n2      public void run() {\n3          System.out.println(\"Working on: \" + Thread.currentThread().getName());\n4      }\n5      public static void main(String[] args) {\n6          Worker w = new Worker();\n7          w.run();\n8      }\n9  }",
     "correctAnswer": "7",
     "difficulty": "hard",
@@ -245,7 +245,7 @@
   {
     "id": 28,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader f = new FileReader(\"test.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"Not Found\");\n10         }\n11     }\n12 }",
+    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader f = new FileReader(\"test.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"Not Found\");\n10          }\n11      }\n12 }",
     "correctAnswer": "8",
     "difficulty": "hard",
     "language": "Java",
@@ -253,7 +253,7 @@
   },
   {
     "id": 29,
-    "question": "Objective: Double the value of 'a' using the macro, and then multiply that doubled result by 3.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  #define DOUBLE(x) x + x\n3  int main() {\n4      int a = 5;\n5      int result = DOUBLE(a) * 3;\n6      printf(\"Result: %d\\n\", result);\n7      return 0;\n8  }",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -280,7 +280,7 @@
   },
   {
     "id": 32,
-    "question": "Objective: Calculate the exact decimal result of the division.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          double result = 10 / 4;\n4          System.out.println(result);\n5      }\n6  }",
     "correctAnswer": "3",
     "difficulty": "easy",
@@ -298,7 +298,7 @@
   },
   {
     "id": 34,
-    "question": "Objective: Return the very first item in the list.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def get_first_item(items):\n2      if len(items) > 0:\n3          return items[1]\n4      return None\n5\n6  print(get_first_item([10, 20, 30]))",
     "correctAnswer": "3",
     "difficulty": "easy",
@@ -361,7 +361,7 @@
   },
   {
     "id": 41,
-    "question": "Objective: Create distinctly empty separate lists for each new call if no list is provided.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def append_value(val, lst=[]):\n2      lst.append(val)\n3      return lst\n4\n5  print(append_value(1))\n6  print(append_value(2))",
     "correctAnswer": "1",
     "difficulty": "medium",
@@ -370,7 +370,7 @@
   },
   {
     "id": 42,
-    "question": "Objective: Successfully modify the string to print \"Hello World\".",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          String text = \"Hello\";\n4          text.concat(\" World\");\n5          System.out.println(text);\n6      }\n7  }",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -406,7 +406,7 @@
   },
   {
     "id": 46,
-    "question": "Objective: Print the actual integer value of num.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int num = 10;\n4      int *ptr = &num;\n5      printf(\"Value: %d\", ptr);\n6      return 0;\n7  }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -424,7 +424,7 @@
   },
   {
     "id": 48,
-    "question": "Objective: Only print the single matching day.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          int day = 2;\n4          switch (day) {\n5              case 1: System.out.println(\"Mon\");\n6              case 2: System.out.println(\"Tue\");\n7              case 3: System.out.println(\"Wed\");\n8          }\n9      }\n10 }",
     "correctAnswer": "6",
     "difficulty": "medium",
@@ -451,7 +451,7 @@
   },
   {
     "id": 51,
-    "question": "Objective: Execute all functions in the list and return [0, 1, 2].",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def make_functions():\n2      funcs = []\n3      for i in range(3):\n4          funcs.append(lambda: i)\n5      return funcs\n6\n7  print([f() for f in make_functions()])",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -460,7 +460,7 @@
   },
   {
     "id": 52,
-    "question": "Objective: Reliably evaluate if the numeric values of the wrappers are equal.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          Integer a = 128;\n4          Integer b = 128;\n5          System.out.println(a == b);\n6      }\n7  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -478,7 +478,7 @@
   },
   {
     "id": 54,
-    "question": "Objective: Ensure each employee has their own independent skills list.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  class Employee:\n2      skills = []\n3      def __init__(self, name):\n4          self.name = name\n5      def add_skill(self, skill):\n6          self.skills.append(skill)\n7\n8  e = Employee(\"John\")",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -487,7 +487,7 @@
   },
   {
     "id": 55,
-    "question": "Objective: Execute the task concurrently on a newly spawned thread.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Task extends Thread {\n2      public void run() {\n3          System.out.println(\"Running\");\n4      }\n5      public static void main(String[] args) {\n6          Task t = new Task();\n7          t.run();\n8      }\n9  }",
     "correctAnswer": "7",
     "difficulty": "hard",
@@ -505,7 +505,7 @@
   },
   {
     "id": 57,
-    "question": "Objective: Ensure the function returns \"Success\" when no exception occurs.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def get_status():\n2      try:\n3          return \"Success\"\n4      finally:\n5          return \"Unknown\"\n6\n7  print(get_status())",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -515,7 +515,7 @@
   {
     "id": 58,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader f = new FileReader(\"file.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"Not found\");\n10         }\n11     }\n12 }",
+    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader f = new FileReader(\"file.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"Not found\");\n10          }\n11      }\n12 }",
     "correctAnswer": "8",
     "difficulty": "hard",
     "language": "Java",
@@ -523,7 +523,7 @@
   },
   {
     "id": 59,
-    "question": "Objective: Dynamically print the number of elements in the array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  void print_size(int arr[]) {\n3      int size = sizeof(arr) / sizeof(arr[0]);\n4      printf(\"%d\", size);\n5  }\n6  int main() {\n7      int data[10];\n8      print_size(data);\n9      return 0;\n10 }",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -586,7 +586,7 @@
   },
   {
     "id": 66,
-    "question": "Objective: Check if the string matches 'admin'.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Auth {\n2      public static void main(String[] args) {\n3          String role = new String(\"admin\");\n4          if (role == \"admin\") {\n5              System.out.println(\"Access Granted\");\n6          }\n7      }\n8  }",
     "correctAnswer": "4",
     "difficulty": "easy",
@@ -631,7 +631,7 @@
   },
   {
     "id": 71,
-    "question": "Objective: Remove all occurrences of the number 3 from the list.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def remove_threes(nums):\n2      for n in nums:\n3          if n == 3:\n4              nums.remove(n)\n5      return nums\n6\n7  print(remove_threes([1, 3, 3, 4]))",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -658,7 +658,7 @@
   },
   {
     "id": 74,
-    "question": "Objective: Append the 'item' to a fresh, empty cart if no cart is provided.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def add_to_cart(item, cart=[]):\n2      cart.append(item)\n3      return cart\n4\n5  c1 = add_to_cart(\"Book\")\n6  c2 = add_to_cart(\"Pen\")\n7  print(c2)",
     "correctAnswer": "1",
     "difficulty": "medium",
@@ -667,7 +667,7 @@
   },
   {
     "id": 75,
-    "question": "Objective: Print every single element in the array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          int[] values = {10, 20, 30};\n4          for (int i = 0; i <= values.length; i++) {\n5              System.out.println(values[i]);\n6          }\n7      }\n8  }",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -695,7 +695,7 @@
   {
     "id": 78,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileInputStream fis = new FileInputStream(\"data.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"General error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"File missing\");\n10         }\n11     }\n12 }",
+    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileInputStream fis = new FileInputStream(\"data.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"General error\");\n8          } catch (FileNotFoundException e) {\n9              System.out.println(\"File missing\");\n10          }\n11      }\n12 }",
     "correctAnswer": "8",
     "difficulty": "medium",
     "language": "Java",
@@ -721,7 +721,7 @@
   },
   {
     "id": 81,
-    "question": "Objective: Generate a list of functions where the first multiplies by 0, the second by 1, and the third by 2.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def make_multipliers():\n2      multipliers = []\n3      for i in range(3):\n4          multipliers.append(lambda x: x * i)\n5      return multipliers\n6\n7  funcs = make_multipliers()\n8  print(funcs[0](5))",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -757,7 +757,7 @@
   },
   {
     "id": 85,
-    "question": "Objective: Correctly evaluate if both Integer objects hold the numeric value of 150.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          Integer val1 = 150;\n4          Integer val2 = 150;\n5          if (val1 == val2) {\n6              System.out.println(\"Values match\");\n7          }\n8      }\n9  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -775,7 +775,7 @@
   },
   {
     "id": 87,
-    "question": "Objective: Each dog should have its own separate list of tricks.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  class Dog:\n2      tricks = []\n3      def __init__(self, name):\n4          self.name = name\n5      def add_trick(self, trick):\n6          self.tricks.append(trick)\n7\n8  d1 = Dog(\"Fido\")\n9  d1.add_trick(\"Roll over\")",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -784,7 +784,7 @@
   },
   {
     "id": 88,
-    "question": "Objective: Start the task asynchronously on a new parallel thread.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class BackgroundTask extends Thread {\n2      public void run() {\n3          System.out.println(\"Processing...\");\n4      }\n5      public static void main(String[] args) {\n6          BackgroundTask task = new BackgroundTask();\n7          task.run();\n8      }\n9  }",
     "correctAnswer": "7",
     "difficulty": "hard",
@@ -793,7 +793,7 @@
   },
   {
     "id": 89,
-    "question": "Objective: Get the larger value of the two variables and increment them simultaneously.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  #define MAX(a, b) ((a) > (b) ? (a) : (b))\n3  int main() {\n4      int x = 5, y = 10;\n5      int max_val = MAX(x++, y++);\n6      printf(\"Max: %d\\n\", max_val);\n7      return 0;\n8  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -928,7 +928,7 @@
   },
   {
     "id": 104,
-    "question": "Objective: Increment the global variable x by 5 and print it.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  x = 10\n2  def update_x():\n3      x += 5\n4      print(x)\n5\n6  update_x()",
     "correctAnswer": "3",
     "difficulty": "medium",
@@ -982,7 +982,7 @@
   },
   {
     "id": 110,
-    "question": "Objective: Open the file, write 'Hello', and then append ' World'.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  with open(\"test.txt\", \"w\") as f:\n2      f.write(\"Hello\")\n3  f.write(\" World\")",
     "correctAnswer": "3",
     "difficulty": "medium",
@@ -991,7 +991,7 @@
   },
   {
     "id": 111,
-    "question": "Objective: Create a generator that yields numbers 0 to 4 iteratively.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def my_gen():\n2      for i in range(5):\n3          return i\n4\n5  for val in my_gen():\n6      print(val)",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -1000,7 +1000,7 @@
   },
   {
     "id": 112,
-    "question": "Objective: Put the current thread into a waiting state until notified.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Counter {\n2      private int count = 0;\n3      public void increment() {\n4          synchronized(this) {\n5              count++;\n6          }\n7      }\n8      public void await() throws InterruptedException {\n9          this.wait();\n10     }\n11 }",
     "correctAnswer": "9",
     "difficulty": "hard",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": 113,
-    "question": "Objective: Accurately print the size (in bytes) of the integer array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  void print_size(int arr[]) {\n3      printf(\"%lu\", sizeof(arr));\n4  }\n5  int main() {\n6      int data[10];\n7      print_size(data);\n8      return 0;\n9  }",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -1018,7 +1018,7 @@
   },
   {
     "id": 114,
-    "question": "Objective: Catch the Exception object using Python 3 syntax.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  try:\n2      x = 1 / 0\n3  except Exception, e:\n4      print(e)",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -1027,7 +1027,7 @@
   },
   {
     "id": 115,
-    "question": "Objective: Override the parent class's display method.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  class Parent {\n2      public void display(String msg) {}\n3  }\n4  class Child extends Parent {\n5      @Override\n6      public void display(Object msg) {}\n7  }",
     "correctAnswer": "6",
     "difficulty": "hard",
@@ -1054,7 +1054,7 @@
   },
   {
     "id": 118,
-    "question": "Objective: Initialize the list with \"A\" and \"B\" and append \"C\".",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  import java.util.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          List<String> list = Arrays.asList(\"A\", \"B\");\n5          list.add(\"C\");\n6          System.out.println(list);\n7      }\n8  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1063,7 +1063,7 @@
   },
   {
     "id": 119,
-    "question": "Objective: Compare the exact string contents for equality.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      char str1[] = \"Hello\";\n4      char str2[] = \"Hello\";\n5      if (str1 == str2) {\n6          printf(\"Equal\\n\");\n7      }\n8      return 0;\n9  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1072,277 +1072,7 @@
   },
   {
     "id": 120,
-    "question": "Objective: Return the integer value 10 using the inner closure function.",
-    "codeSnippet": "1  def outer():\n2      x = 10\n3      def inner():\n4          return x\n5      return inner()()\n6\n7  print(outer())",
-    "correctAnswer": "5",
-    "difficulty": "hard",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 91,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  text = \"hello\"\n2  text[0] = \"H\"\n3  print(text)",
-    "correctAnswer": "2",
-    "difficulty": "easy",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 92,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          int x = 5;\n4          if (x > 3); {\n5              System.out.println(\"Greater\");\n6          }\n7      }\n8  }",
-    "correctAnswer": "4",
-    "difficulty": "easy",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 93,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int val = 100;\n4      printf(\"The value is %d\\n\");\n5      return 0;\n6  }",
-    "correctAnswer": "4",
-    "difficulty": "easy",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 94,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  def print_list(lst):\n2      for i in range(len(lst)):\n3      print(lst[i])\n4\n5  print_list([1, 2, 3])",
-    "correctAnswer": "3",
-    "difficulty": "easy",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 95,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public class App {\n2      public static void main() {\n3          System.out.println(\"Started\");\n4      }\n5  }",
-    "correctAnswer": "2",
-    "difficulty": "easy",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 96,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int arr[5] = {0};\n4      for(int i = 1; i <= 5; i++) {\n5          arr[i] = i;\n6      }\n7      return 0;\n8  }",
-    "correctAnswer": "5",
-    "difficulty": "easy",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 97,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  def check_status(status):\n2      if status = \"active\":\n3          return True\n4      return False\n5\n6  print(check_status(\"active\"))",
-    "correctAnswer": "2",
-    "difficulty": "easy",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 98,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          boolean flag = 1;\n4          if (flag) {\n5              System.out.println(\"True\");\n6          }\n7      }\n8  }",
-    "correctAnswer": "3",
-    "difficulty": "easy",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 99,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  void print_msg() {\n3      printf(\"Hello\\n\");\n4      return 1;\n5  }\n6  int main() {\n7      print_msg();\n8      return 0;\n9  }",
-    "correctAnswer": "4",
-    "difficulty": "easy",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 100,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  def add_numbers(a, b):\n2      return a + b\n3\n4  result = add_numbers(10, 20)\n5  print(result)",
-    "correctAnswer": "NA",
-    "difficulty": "easy",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 101,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  data = {\"name\": \"Alice\"}\n2  print(data[\"age\"])",
-    "correctAnswer": "2",
-    "difficulty": "medium",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 102,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          String[] names = new String[5];\n4          System.out.println(names[0].length());\n5      }\n6  }",
-    "correctAnswer": "4",
-    "difficulty": "medium",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 103,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int a = 10, b = 20;\n4      int *p = &a;\n5      *p = &b;\n6      printf(\"%d\", *p);\n7      return 0;\n8  }",
-    "correctAnswer": "5",
-    "difficulty": "medium",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 104,
-    "question": "Objective: Increment the global variable x by 5 and print it.",
-    "codeSnippet": "1  x = 10\n2  def update_x():\n3      x += 5\n4      print(x)\n5\n6  update_x()",
-    "correctAnswer": "3",
-    "difficulty": "medium",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 105,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public abstract class Animal {\n2      abstract void makeSound();\n3  }\n4  public class Main {\n5      public static void main(String[] args) {\n6          Animal a = new Animal();\n7          a.makeSound();\n8      }\n9  }",
-    "correctAnswer": "6",
-    "difficulty": "medium",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 106,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  #include <string.h>\n3  int main() {\n4      char dest[5];\n5      strcpy(dest, \"HelloWorld\");\n6      printf(\"%s\", dest);\n7      return 0;\n8  }",
-    "correctAnswer": "5",
-    "difficulty": "medium",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 107,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  def divide(a, b):\n2      try:\n3          return a / b\n4      except ZeroDivisionError:\n5          pass\n6\n7  print(divide(10, 0) + 5)",
-    "correctAnswer": "7",
-    "difficulty": "medium",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 108,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          int x = 5;\n4          int y = 0;\n5          int z = x / y;\n6          System.out.println(z);\n7      }\n8  }",
-    "correctAnswer": "5",
-    "difficulty": "medium",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 109,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      int arr[] = {1, 2, 3};\n4      int *ptr = arr;\n5      printf(\"%d\", *ptr++);\n6      return 0;\n7  }",
-    "correctAnswer": "NA",
-    "difficulty": "medium",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 110,
-    "question": "Objective: Open the file, write 'Hello', and then append ' World'.",
-    "codeSnippet": "1  with open(\"test.txt\", \"w\") as f:\n2      f.write(\"Hello\")\n3  f.write(\" World\")",
-    "correctAnswer": "3",
-    "difficulty": "medium",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 111,
-    "question": "Objective: Create a generator that yields numbers 0 to 4 iteratively.",
-    "codeSnippet": "1  def my_gen():\n2      for i in range(5):\n3          return i\n4\n5  for val in my_gen():\n6      print(val)",
-    "correctAnswer": "3",
-    "difficulty": "hard",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 112,
-    "question": "Objective: Put the current thread into a waiting state until notified.",
-    "codeSnippet": "1  public class Counter {\n2      private int count = 0;\n3      public void increment() {\n4          synchronized(this) {\n5              count++;\n6          }\n7      }\n8      public void await() throws InterruptedException {\n9          this.wait();\n10     }\n11 }",
-    "correctAnswer": "9",
-    "difficulty": "hard",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 113,
-    "question": "Objective: Accurately print the size (in bytes) of the integer array.",
-    "codeSnippet": "1  #include <stdio.h>\n2  void print_size(int arr[]) {\n3      printf(\"%lu\", sizeof(arr));\n4  }\n5  int main() {\n6      int data[10];\n7      print_size(data);\n8      return 0;\n9  }",
-    "correctAnswer": "3",
-    "difficulty": "hard",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 114,
-    "question": "Objective: Catch the Exception object using Python 3 syntax.",
-    "codeSnippet": "1  try:\n2      x = 1 / 0\n3  except Exception, e:\n4      print(e)",
-    "correctAnswer": "3",
-    "difficulty": "hard",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 115,
-    "question": "Objective: Override the parent class's display method.",
-    "codeSnippet": "1  class Parent {\n2      public void display(String msg) {}\n3  }\n4  class Child extends Parent {\n5      @Override\n6      public void display(Object msg) {}\n7  }",
-    "correctAnswer": "6",
-    "difficulty": "hard",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 116,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  #include <stdio.h>\n2  #include <stdlib.h>\n3  int main() {\n4      int *ptr = malloc(sizeof(int) * 10);\n5      free(ptr);\n6      ptr[0] = 5;\n7      return 0;\n8  }",
-    "correctAnswer": "6",
-    "difficulty": "hard",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 117,
-    "question": "Find the error in the code.",
-    "codeSnippet": "1  def modify_tuple(tup):\n2      tup[0].append(4)\n3      return tup\n4\n5  my_tup = ([1, 2, 3], \"hello\")\n6  print(modify_tuple(my_tup))",
-    "correctAnswer": "NA",
-    "difficulty": "hard",
-    "language": "Python",
-    "usageCount": 0
-  },
-  {
-    "id": 118,
-    "question": "Objective: Initialize the list with \"A\" and \"B\" and append \"C\".",
-    "codeSnippet": "1  import java.util.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          List<String> list = Arrays.asList(\"A\", \"B\");\n5          list.add(\"C\");\n6          System.out.println(list);\n7      }\n8  }",
-    "correctAnswer": "5",
-    "difficulty": "hard",
-    "language": "Java",
-    "usageCount": 0
-  },
-  {
-    "id": 119,
-    "question": "Objective: Compare the exact string contents for equality.",
-    "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      char str1[] = \"Hello\";\n4      char str2[] = \"Hello\";\n5      if (str1 == str2) {\n6          printf(\"Equal\\n\");\n7      }\n8      return 0;\n9  }",
-    "correctAnswer": "5",
-    "difficulty": "hard",
-    "language": "C",
-    "usageCount": 0
-  },
-  {
-    "id": 120,
-    "question": "Objective: Return the integer value 10 using the inner closure function.",
     "codeSnippet": "1  def outer():\n2      x = 10\n3      def inner():\n4          return x\n5      return inner()()\n6\n7  print(outer())",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1441,7 +1171,7 @@
   },
   {
     "id": 161,
-    "question": "Objective: Remove all instances of the number 2 from the list.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def remove_twos(nums):\n2      for n in nums:\n3          if n == 2:\n4              nums.remove(n)\n5      return nums\n6  \n7  print(remove_twos([1, 2, 2, 3]))",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -1468,7 +1198,7 @@
   },
   {
     "id": 164,
-    "question": "Objective: Create independent lists for each call when no list is provided.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def append_item(val, lst=[]):\n2      lst.append(val)\n3      return lst\n4  \n5  print(append_item(1))\n6  print(append_item(2))",
     "correctAnswer": "1",
     "difficulty": "medium",
@@ -1477,7 +1207,7 @@
   },
   {
     "id": 165,
-    "question": "Objective: Accurately verify if the content of both strings is the same.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Check {\n2      public static void main(String[] args) {\n3          String s1 = new String(\"Data\");\n4          String s2 = new String(\"Data\");\n5          if (s1 == s2) {\n6              System.out.println(\"Matches!\");\n7          }\n8      }\n9  }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -1531,7 +1261,7 @@
   },
   {
     "id": 171,
-    "question": "Objective: Generate a list of functions returning 0, 1, and 2 respectively.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def make_funcs():\n2      funcs = [lambda: i for i in range(3)]\n3      return funcs\n4  \n5  functions = make_funcs()\n6  print(functions[0]())",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -1558,7 +1288,7 @@
   },
   {
     "id": 174,
-    "question": "Objective: Ensure each instance of 'User' has a completely separate list of roles.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  class User:\n2      roles = []\n3      def __init__(self, name):\n4          self.name = name\n5      def add_role(self, role):\n6          self.roles.append(role)\n7  \n8  u = User(\"Admin\")",
     "correctAnswer": "2",
     "difficulty": "hard",
@@ -1567,7 +1297,7 @@
   },
   {
     "id": 175,
-    "question": "Objective: Run the heavy computation simultaneously on a new background thread.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class HeavyTask extends Thread {\n2      public void run() {\n3          System.out.println(\"Computing...\");\n4      }\n5      public static void main(String[] args) {\n6          HeavyTask t = new HeavyTask();\n7          t.run();\n8      }\n9  }",
     "correctAnswer": "7",
     "difficulty": "hard",
@@ -1576,7 +1306,7 @@
   },
   {
     "id": 176,
-    "question": "Objective: Find the larger value, then increment 'a' and 'b' exactly once.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  #define MAX(a, b) ((a) > (b) ? (a) : (b))\n3  int main() {\n4      int a = 5, b = 10;\n5      int result = MAX(a++, b++);\n6      printf(\"%d\", result);\n7      return 0;\n8  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1595,7 +1325,7 @@
   {
     "id": 178,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader fr = new FileReader(\"data.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (IOException e) {\n9              System.out.println(\"IO Error\");\n10         }\n11     }\n12 }",
+    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              FileReader fr = new FileReader(\"data.txt\");\n6          } catch (Exception e) {\n7              System.out.println(\"Error\");\n8          } catch (IOException e) {\n9              System.out.println(\"IO Error\");\n10          }\n11      }\n12 }",
     "correctAnswer": "8",
     "difficulty": "hard",
     "language": "Java",
@@ -1711,7 +1441,7 @@
   },
   {
     "id": 191,
-    "question": "Objective: Sort the list in descending order (highest to lowest).",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def sort_scores(scores):\n2      scores.sort(reverse=False)\n3      return scores\n4\n5  print(sort_scores([10, 50, 20]))",
     "correctAnswer": "2",
     "difficulty": "medium",
@@ -1720,7 +1450,7 @@
   },
   {
     "id": 192,
-    "question": "Objective: Print the actual contents of the array to the console.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Main {\n2      public static void main(String[] args) {\n3          int[] numbers = {1, 2, 3};\n4          System.out.println(numbers);\n5      }\n6  }",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -1729,7 +1459,7 @@
   },
   {
     "id": 193,
-    "question": "Objective: Read a user's full name (including spaces) from input.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int main() {\n3      char fullName[50];\n4      printf(\"Enter full name: \");\n5      scanf(\"%s\", fullName);\n6      printf(\"Name: %s\", fullName);\n7      return 0;\n8  }",
     "correctAnswer": "5",
     "difficulty": "medium",
@@ -1738,7 +1468,7 @@
   },
   {
     "id": 194,
-    "question": "Objective: Safely check if a user is an admin without crashing if the key is missing.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def check_admin(user_data):\n2      if user_data[\"is_admin\"]:\n3          return True\n4      return False\n5\n6  print(check_admin({\"name\": \"Bob\"}))",
     "correctAnswer": "2",
     "difficulty": "medium",
@@ -1756,7 +1486,7 @@
   },
   {
     "id": 196,
-    "question": "Objective: Return a pointer to an array to be used in the main function.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  int* create_array() {\n3      int arr[5] = {1, 2, 3, 4, 5};\n4      return arr;\n5  }\n6  int main() {\n7      int *p = create_array();\n8      return 0;\n9  }",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -1765,7 +1495,7 @@
   },
   {
     "id": 197,
-    "question": "Objective: Create a completely independent copy of the list that won't modify the original.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def copy_and_append(original):\n2      new_list = original\n3      new_list.append(100)\n4      return new_list\n5\n6  data = [1, 2]\n7  copy_and_append(data)\n8  print(data)",
     "correctAnswer": "2",
     "difficulty": "medium",
@@ -1783,7 +1513,7 @@
   },
   {
     "id": 199,
-    "question": "Objective: Allocate exactly enough memory for a string containing 10 characters.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  #include <stdlib.h>\n3  int main() {\n4      char *str = malloc(10 * sizeof(char));\n5      sprintf(str, \"0123456789\");\n6      printf(\"%s\", str);\n7      free(str);\n8      return 0;\n9  }",
     "correctAnswer": "4",
     "difficulty": "medium",
@@ -1801,7 +1531,7 @@
   },
   {
     "id": 201,
-    "question": "Objective: Properly update the global 'count' variable from inside the function.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  count = 0\n2  \n3  def update_count():\n4      count = count + 1\n5      print(count)\n6  \n7  update_count()",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -1810,7 +1540,7 @@
   },
   {
     "id": 202,
-    "question": "Objective: Safely update the shared counter across multiple threads without losing increments.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class Counter {\n2      private int count = 0;\n3      \n4      public void increment() {\n5          count++;\n6      }\n7      \n8      public int getCount() { return count; }\n9  }",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -1819,7 +1549,7 @@
   },
   {
     "id": 203,
-    "question": "Objective: Correctly free all memory allocated for the 2D array.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdlib.h>\n2  int main() {\n3      int **matrix = malloc(5 * sizeof(int*));\n4      for(int i=0; i<5; i++) matrix[i] = malloc(5 * sizeof(int));\n5      \n6      free(matrix);\n7      return 0;\n8  }",
     "correctAnswer": "6",
     "difficulty": "hard",
@@ -1828,7 +1558,7 @@
   },
   {
     "id": 204,
-    "question": "Objective: Log the exact time the function is *called*, not when it was defined.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  import time\n2  \n3  def log_event(event, timestamp=time.time()):\n4      print(f\"{event} at {timestamp}\")\n5  \n6  log_event(\"Start\")\n7  time.sleep(2)\n8  log_event(\"End\")",
     "correctAnswer": "3",
     "difficulty": "hard",
@@ -1838,7 +1568,7 @@
   {
     "id": 205,
     "question": "Find the error in the code.",
-    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              throw new IOException();\n6          } catch (Exception e) {\n7              System.out.println(\"General\");\n8          } catch (IOException e) {\n9              System.out.println(\"IO\");\n10         }\n11     }\n12 }",
+    "codeSnippet": "1  import java.io.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          try {\n5              throw new IOException();\n6          } catch (Exception e) {\n7              System.out.println(\"General\");\n8          } catch (IOException e) {\n9              System.out.println(\"IO\");\n10          }\n11      }\n12 }",
     "correctAnswer": "8",
     "difficulty": "hard",
     "language": "Java",
@@ -1846,7 +1576,7 @@
   },
   {
     "id": 206,
-    "question": "Objective: Safely reallocate memory without risking a memory leak if realloc fails.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdlib.h>\n2  int main() {\n3      int *ptr = malloc(10 * sizeof(int));\n4      \n5      ptr = realloc(ptr, 20 * sizeof(int));\n6      \n7      free(ptr);\n8      return 0;\n9  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1855,7 +1585,7 @@
   },
   {
     "id": 207,
-    "question": "Objective: Ensure True is printed only if both references point to the exact same object in memory.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def compare_identity():\n2      a = [1, 2, 3]\n3      b = [1, 2, 3]\n4      if a == b:\n5          print(\"True\")\n6\n7  compare_identity()",
     "correctAnswer": "4",
     "difficulty": "hard",
@@ -1864,7 +1594,7 @@
   },
   {
     "id": 208,
-    "question": "Objective: Safely remove elements from a list while iterating over it.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  import java.util.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          List<String> list = new ArrayList<>(Arrays.asList(\"A\", \"B\", \"C\"));\n5          for (String item : list) {\n6              if (item.equals(\"B\")) list.remove(item);\n7          }\n8      }\n9  }",
     "correctAnswer": "6",
     "difficulty": "hard",
@@ -1873,7 +1603,7 @@
   },
   {
     "id": 209,
-    "question": "Objective: Cube the variable 'a' and then increment 'a' exactly once.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  #include <stdio.h>\n2  #define CUBE(x) ((x) * (x) * (x))\n3  int main() {\n4      int a = 3;\n5      int result = CUBE(a++);\n6      printf(\"Result: %d\", result);\n7      return 0;\n8  }",
     "correctAnswer": "5",
     "difficulty": "hard",
@@ -1963,7 +1693,7 @@
   },
   {
     "id": 219,
-    "question": "Objective: Safely print the user's score combined with the message text.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  def show_score(score):\n2      message = \"Your score is: \" + score\n3      print(message)\n4\n5  show_score(100)",
     "correctAnswer": "2",
     "difficulty": "medium",
@@ -1972,7 +1702,7 @@
   },
   {
     "id": 220,
-    "question": "Objective: Return an entirely uppercase version of the input string.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  public class StringUtil {\n2      public static String makeUpper(String str) {\n3          str.toUpperCase();\n4          return str;\n5      }\n6  }",
     "correctAnswer": "3",
     "difficulty": "medium",
@@ -1990,7 +1720,7 @@
   },
   {
     "id": 222,
-    "question": "Objective: Use the Iterator to safely remove \"B\" from the collection.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  import java.util.*;\n2  public class Main {\n3      public static void main(String[] args) {\n4          List<String> list = new ArrayList<>(Arrays.asList(\"A\", \"B\", \"C\"));\n5          Iterator<String> it = list.iterator();\n6          while (it.hasNext()) {\n7              if (it.next().equals(\"B\")) list.remove(\"B\");\n8          }\n9      }\n10 }",
     "correctAnswer": "7",
     "difficulty": "hard",
@@ -2008,7 +1738,7 @@
   },
   {
     "id": 224,
-    "question": "Objective: Update the global config dictionary so that it permanently prints True on line 8.",
+    "question": "Find the error in the code.",
     "codeSnippet": "1  config = {\"debug\": False}\n2\n3  def enable_debug():\n4      config = {\"debug\": True}\n5      print(\"Debug on\")\n6\n7  enable_debug()\n8  print(config[\"debug\"])",
     "correctAnswer": "4",
     "difficulty": "hard",

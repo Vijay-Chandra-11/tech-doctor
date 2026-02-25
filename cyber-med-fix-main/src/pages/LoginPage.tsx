@@ -87,7 +87,7 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
             animate={{ rotateY: [0, 10, 0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
           >
-            <span className="text-4xl">🏥</span>
+            <span className="text-4xl"><img src="/doctor.jpeg" alt="Tech Doctor" className="w-16 h-16 object-cover rounded-md" /></span>
           </motion.div>
           <h1
             className={`text-4xl font-black tracking-wider mb-1 ${glitchTitle ? "animate-glitch" : ""}`}
@@ -247,7 +247,7 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-6xl">🏥</span>
+                <span className="text-6xl"><img src="/doctor.jpeg" alt="Tech Doctor" className="w-16 h-16 object-cover rounded-md" /></span>
               </div>
               {/* Corner markers */}
               {[["top-0 left-0", "border-t-2 border-l-2"],

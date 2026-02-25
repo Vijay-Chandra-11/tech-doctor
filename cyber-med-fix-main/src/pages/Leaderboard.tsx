@@ -49,7 +49,7 @@
 // //       >
 // //         <div className="flex items-center justify-between max-w-5xl mx-auto">
 // //           <div className="flex items-center gap-3">
-// //             <span className="text-2xl">🏥</span>
+// //             <span className="text-2xl"><img src="/doctor.jpeg" alt="Tech Doctor" className="w-16 h-16 object-cover rounded-md" /></span>
 // //             <div>
 // //               <h1 className="text-xl font-black tracking-widest neon-crimson"
 // //                 style={{ fontFamily: "'Orbitron', sans-serif" }}>
@@ -334,7 +334,7 @@
 //       >
 //         <div className="flex items-center justify-between max-w-5xl mx-auto">
 //           <div className="flex items-center gap-3">
-//             <span className="text-2xl">🏥</span>
+//             <span className="text-2xl"><img src="/doctor.jpeg" alt="Tech Doctor" className="w-16 h-16 object-cover rounded-md" /></span>
 //             <div>
 //               <h1 className="text-xl font-black tracking-widest neon-crimson"
 //                 style={{ fontFamily: "'Orbitron', sans-serif" }}>
@@ -580,7 +580,7 @@ export default function Leaderboard({ onLogout }: LeaderboardProps) {
       >
         <div className="flex items-center justify-between max-w-5xl mx-auto">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">🏥</span>
+            <span className="text-2xl"><img src="/doctor.jpeg" alt="Tech Doctor" className="w-16 h-16 object-cover rounded-md" /></span>
             <div>
               <h1 className="text-xl font-black tracking-widest neon-crimson"
                 style={{ fontFamily: "'Orbitron', sans-serif" }}>
