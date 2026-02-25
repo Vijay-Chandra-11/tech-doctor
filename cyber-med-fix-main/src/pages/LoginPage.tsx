@@ -150,7 +150,7 @@ export default function LoginPage({ onStudentLogin, onAdminLogin }: LoginPagePro
                   </label>
                   <input
                     className="input-cyber w-full px-4 py-3 rounded-lg"
-                    placeholder="Enter your name..."
+                    placeholder="Enter your Roll No."
                     value={studentName}
                     onChange={(e) => setStudentName(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && handleStudentLogin()}
