@@ -293,19 +293,19 @@ export default function Dashboard({ studentName, onLogout }: DashboardProps) {
     }
   }, [curedParts, failedParts, isTimeout]);
 
-  // 3. 30-Minute Auto-End & Auto-Save Check (1800 seconds)
+  // 3. 30-Minute Auto-End & Auto-Save Check (900 seconds)
   useEffect(() => {
-    if (secondsElapsed >= 1800 && !gameOver && !isTimeout) {
+    if (secondsElapsed >= 900 && !gameOver && !isTimeout) {
       if (timerRef.current) clearInterval(timerRef.current);
       setIsTimeout(true);
       
       // Immediately save to Firebase so data isn't lost if they abandon the PC
       const autoSaveTimeout = async () => {
-        const score = computeScore(curedParts.length, 1800, penalties);
+        const score = computeScore(curedParts.length, 900, penalties);
         await saveScore({ 
           name: studentName, 
           level: 1, 
-          timeTaken: 1800, 
+          timeTaken: 900, 
           organsRestored: curedParts.length, 
           totalScore: score 
         });
@@ -375,7 +375,7 @@ export default function Dashboard({ studentName, onLogout }: DashboardProps) {
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-muted-foreground" />
               <span className="font-mono text-lg font-bold neon-cyan"
-                style={{ fontFamily: "'JetBrains Mono', monospace", color: secondsElapsed >= 1500 ? "hsl(var(--neon-crimson))" : "" }}>
+                style={{ fontFamily: "'JetBrains Mono', monospace", color: secondsElapsed >= 720 ? "hsl(var(--neon-crimson))" : "" }}>
                 {formatTime(secondsElapsed)}
               </span>
             </div>
@@ -460,7 +460,7 @@ export default function Dashboard({ studentName, onLogout }: DashboardProps) {
           <div className="glass-card rounded-xl p-4" style={{ border: "1px solid hsla(186,100%,50%,0.15)" }}>
             <h3 className="text-xs font-bold tracking-widest neon-cyan uppercase mb-3" style={{ fontFamily: "'Orbitron', sans-serif" }}>🎯 Score Preview</h3>
             <p className="text-2xl font-black neon-cyan" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-              {computeScore(curedParts.length, Math.min(secondsElapsed, 1800), penalties).toLocaleString()}
+              {computeScore(curedParts.length, Math.min(secondsElapsed, 900), penalties).toLocaleString()}
             </p>
             <p className="text-xs text-muted-foreground mt-1">Base + time bonus</p>
             {penalties > 0 && (
@@ -556,15 +556,15 @@ export default function Dashboard({ studentName, onLogout }: DashboardProps) {
                 {isTimeout ? "TIME LIMIT EXCEEDED" : isPerfect ? "PATIENT SAVED!" : "OPERATION FINISHED"}
               </h2>
               <p className="text-muted-foreground mb-6">
-                {isTimeout ? "30 minutes elapsed. Session auto-terminated." : isPerfect ? "All parts successfully restored." : `You saved ${curedParts.length} out of 5 parts.`}
+                {isTimeout ? "15 minutes elapsed. Session auto-terminated." : isPerfect ? "All parts successfully restored." : `You saved ${curedParts.length} out of 5 parts.`}
               </p>
               
               <div className="glass-card rounded-xl p-4 mb-6 border border-slate-800">
                 <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">Final Score</p>
                 <p className="text-3xl font-black neon-cyan" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-                  {computeScore(curedParts.length, Math.min(secondsElapsed, 1800), penalties).toLocaleString()}
+                  {computeScore(curedParts.length, Math.min(secondsElapsed, 900), penalties).toLocaleString()}
                 </p>
-                <p className="text-sm text-muted-foreground mt-1">Time: {formatTime(Math.min(secondsElapsed, 1800))}</p>
+                <p className="text-sm text-muted-foreground mt-1">Time: {formatTime(Math.min(secondsElapsed, 900))}</p>
               </div>
               
               <motion.button
